@@ -1,0 +1,29 @@
+﻿@page
+@model ChallengeWriteupsModel
+@{
+    ViewData["Title"] = "Challenge Write-ups";
+}
+
+<h2 class="my-4 text-center">Challenge Write-ups</h2>
+
+<div class="container">
+    <div class="row">
+        @foreach (var writeup in Model.Writeups)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">@writeup.Title</h5>
+                        <p class="card-text">@writeup.Summary</p>
+                        <a asp-page="/ChallengeWriteups/Details" asp-route-id="@writeup.Id" class="btn btn-primary">
+                            View Write-up
+                        </a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Published on @writeup.DatePublished.ToShortDateString()
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

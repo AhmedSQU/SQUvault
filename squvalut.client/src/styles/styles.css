@@ -1,0 +1,49 @@
+/* Navbar link hover effect */
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #cce7ff; /* Lighter shade of blue on hover */
+        text-decoration: none;
+    }
+
+    /* Underline effect on hover */
+    .navbar-nav .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background-color: #cce7ff; /* Light blue underline */
+        transition: width 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        width: 100%;
+    }
+/* Logo styling */
+.navbar-brand img {
+    border-radius: 8px; /* Rounds the corners */
+    height: 150px; /* Adjusts the height */
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    font-size: 1.5rem; /* Increases font size */
+    padding: 10px 15px; /* Adds padding for a larger click area */
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #ffd700 !important; /* Changes color on hover to a golden shade */
+    }
+.highlight {
+    background-color: #fff3cd; /* Light yellow background */
+    color: #856404; /* Dark golden text */
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}

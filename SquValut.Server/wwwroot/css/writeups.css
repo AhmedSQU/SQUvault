@@ -1,0 +1,32 @@
+﻿.writeups-container {
+    margin-top: 2rem;
+}
+
+.writeup-card {
+    transition: transform 0.2s ease;
+}
+
+    .writeup-card:hover {
+        transform: scale(1.02);
+    }
+
+.writeup-detail {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .writeup-detail h2 {
+        font-weight: 600;
+    }
+
+    .writeup-detail .content p {
+        line-height: 1.6;
+    }
+
+.card-footer {
+    font-size: 0.9em;
+}
